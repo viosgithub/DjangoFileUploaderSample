@@ -19,7 +19,7 @@ def index(request):
     else:
         form = UploadFileForm()
 
-    t = loader.get_template(r"fileup\index.html")
+    t = loader.get_template(r"fileup/index.html")
     c = Context()
     c["form"] = form
     c["msg"] = msg
